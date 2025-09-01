@@ -1,21 +1,21 @@
 const trabajitos = [
     {
-        photo: "https://picsum.photos/id/237/400/300",
+        photo: "https://valentinatroncoso.github.io/previa-prueba/img/ergonomia.webp",
         title: "Parque Botanico",
         description: "Trabajo de Ergonomia y factores humanos, con Prof. Claudio Ribalta."
     },
     {
-        photo: "https://picsum.photos/id/84/400/300",
+        photo: "https://valentinatroncoso.github.io/previa-prueba/img/abanico.webp",
         title: "Capsula del tiempo",
         description: "Trabajo de Proyecto II I, con Prof. Gabriela Pradenas."
     },
     {
-        photo: "https://picsum.photos/id/96/400/300",
+        photo: "https://valentinatroncoso.github.io/previa-prueba/img/lampara.webp",
         title: "Otro dibujo",
         description: "Expositor, con Prof. Gabriela Pradenas."
     },
     {
-        photo: "https://picsum.photos/id/104/400/300",
+        photo: "https://valentinatroncoso.github.io/previa-prueba/img/colores.webp",
         title: "Color",
         description: "Trabajo de Representacion Conceptual, con Camila Lobos."
     }            
