@@ -11,7 +11,7 @@ const trabajitos = [
     },
     {
         photo: "https://valentinatroncoso.github.io/previa-prueba/img/lampara.webp",
-        title: "Otro dibujo",
+        title: "Expositor de luz",
         description: "Expositor, con Prof. Gabriela Pradenas."
     },
     {
