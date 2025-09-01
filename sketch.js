@@ -1,3 +1,29 @@
+const trabajitos = [
+    {
+        photo: "https://picsum.photos/id/237/400/300",
+        title: "Parque Botanico",
+        description: "Trabajo de Ergonomia y factores humanos, con Prof. Claudio Ribalta."
+    },
+    {
+        photo: "https://picsum.photos/id/84/400/300",
+        title: "Capsula del tiempo",
+        description: "Trabajo de Proyecto II I, con Prof. Gabriela Pradenas."
+    },
+    {
+        photo: "https://picsum.photos/id/96/400/300",
+        title: "Otro dibujo",
+        description: "Expositor, con Prof. Gabriela Pradenas."
+    },
+    {
+        photo: "https://picsum.photos/id/104/400/300",
+        title: "Color",
+        description: "Trabajo de Representacion Conceptual, con Camila Lobos."
+    }            
+]
+
+
+
+
 const datos = [
     {
         id: 1,
@@ -210,7 +236,7 @@ var otrxs = [];
 
 
 datos.forEach((x) => {
-    if (x.nombre == "Martina Urzúa") {
+    if (x.nombre == "Valentina Troncoso") {
         yo = x;
     } else {
         otrxs.push(x);
@@ -236,7 +262,12 @@ function setup() {
     //Lo que sigue es JavaScript a secas
     otrxs.forEach((x)=>{
         document.querySelector("#otredad").innerHTML += `<div><a href="${x.cuenta}"><img src="${x.foto}" title="${x.esperado}"></a></div>`;
-    })
+    });
+    //Copy-paste, y arreglín
+    trabajitos.forEach((x)=>{
+        document.querySelector("#portafolio").innerHTML += `<div><img src="${x.photo}"><p>${x.title}</p></div>`;
+    });
+
     //Ahora vuelvo al p5.js
     noStroke();
 }
@@ -249,16 +280,20 @@ function draw() {
     shininess(50);
     metalness(1);
 
-    // Add shapes.
+    // Ojo con el push()
     push();
     fill("red");
     translate(0, -valor / 4, -valor / 7);
     sphere(valor / 4);
     pop();
+    // Ojo con el pop()
+    // Ojo con el push()
     push();
     fill("blue");
     sphere(valor / 5);
     pop();
+    // Ojo con el pop()
+
 }
 
 function windowResized() {
