@@ -81,3 +81,18 @@ div#otredad div img:hover {
     transform: scale(1.1);
     filter: grayscale(0);
 }
+/* agregar dos cositas */
+div#portafolio div{
+    padding: 0.5rem;
+    width: calc(50% - 1rem;
+    float:left;
+}
+
+div#portafolio div img{
+    width:100%;
+}
+div#final{
+    clear:both;
+    text-align:center;
+    padding:1rem;
+}
