@@ -275,22 +275,43 @@ function setup() {
 function draw() {
     background("white");
     orbitControl();
-    pointLight(255, 255, 255, valor / 3, valor / 2, 50);
-    specularMaterial(255);
-    shininess(50);
+    pointLight(255, 255, 255, valor / 1, valor / 2, 50);
+    specularMaterial(0);
+    shininess(100);
     metalness(1);
 
     // Ojo con el push()
     push();
-    fill("red");
-    translate(0, -valor / 4, -valor / 7);
-    sphere(valor / 4);
+    fill("white");
+    translate(0, -40 / 4, -100 / 7);
+   cone(valor / 4);
     pop();
     // Ojo con el pop()
     // Ojo con el push()
     push();
-    fill("blue");
-    sphere(valor / 5);
+    fill("yellow");
+    sphere (valor / 5);
+    pop();
+    // Ojo con el pop()
+     // Ojo con el push()
+    push();
+    fill("red");
+      translate(0, 20 / 4, 780 / 7);
+    torus (valor / 15);
+    pop();
+    // Ojo con el pop()
+         // Ojo con el push()
+    push();
+    fill("red");
+      translate(7, -20 / 4, -780 / 7);
+    torus (valor / 15);
+    pop();
+    // Ojo con el pop()
+             // Ojo con el push()
+    push();
+    fill("white");
+      translate(10, 100 / -1, 500 / 15);
+   cylinder (valor / 7);
     pop();
     // Ojo con el pop()
 
